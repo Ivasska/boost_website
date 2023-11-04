@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Yozhyk WoT Boost</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+		rel="stylesheet">
+	<!-- підключення анімації -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site">
+
+	<!-- HEADER -->
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+
+					<a href="#" class="logo">
+						<img class="logo__link" src="images/logo.svg" alt="">
+					</a>
+
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html" class="menu__list-link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__list-link">DISCOUNTS</a>
+							</li>
+							<li class="menu__item">
+								<a href="faq.html" class="menu__list-link">FAQ</a>
+							</li>
+							<li class="menu__item">
+								<a href="contact.html" class="menu__list-link">CONTACT</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- --------- shopping cart ----- -->
+					<div class="shopping">
+						<img src="images/cart.svg" alt="">
+						<span class="shopping-quantity">0</span>
+					</div>
+					<!-- --------- end shopping cart ----- -->
+
+				</div>
+
+				<!------------- новий варіант -------------->
+				<div class="card">
+					<h1>Card</h1>
+					<ul class="listCard" id="productList"></ul>
+					<div class="total" id="totalCost">0</div>
+					<div class="checkOut">
+						<div class="orderNow" id="orderNowButton">Order now</div>
+						<div class="closeShopping" id="closeShoppingButton">Close</div>
+					</div>
+				</div>
+				<!------------- новий варіант -------------->
+			</div>
+
+		</header>
+
+		<main class="main site-content">
+			<div class="container">
+
+				<div class="shop-container">
+					<div class="shop-container__wrapper">
+						<h2 class="shop-title">Your order</h2>
+
+						<div id="orderInfo">
+							<!-- <h2>Інформація про товари:</h2> -->
+							<p id="productName"></p>
+							<p id="productPrice"></p>
+							<img id="productImage" src="" alt="Product Image">
+					</div>
+
+						<div class="shop-box">
+							<ul id="cart-items"></ul>
+							<div class="total">Total: <span id="cart-total">0</span></div>
+						</div>
+
+						<div class="order-form__wrapper">
+							<h2>Order Details</h2>
+							<div class="order-form">
+								<form id="order-form">
+									<!-- <label for="name">Name:</label> -->
+									<input class="form__input-shop" id="name" name="name" type="text" data-validate-field="name" placeholder="Name" required>
+	
+									<!-- <label for="email">Email:</label> -->
+									<input class="form__input-shop" id="email" name="email" required type="email" data-validate-field="email" placeholder="E-mail">
+	
+									<!-- <label for="tel">Phone:</label> -->
+									<input class="form__input-shop" id="tel" name="tel" required type="tel" data-validate-field="tel" placeholder="Phone">
+	
+									<!-- <label for="text">Your text:</label> -->
+									<textarea class="form__textarea-shop" id="text" name="text" required placeholder="Order details"></textarea>
+	
+									<button class="form-shop__btn" type="submit">Place Order</button>
+								</form>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+		</main>
+
+
+		<footer class="footer">
+
+			<div class="container">
+
+				<div class="footer__content">
+
+					<nav class="footer__menu-left">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item">
+								<h4 class="footer__menu-title">QUICK LINKS</h4>
+							</li>
+							<li class="footer__menu-item"><a href="#" class="footer__menu-link">HOME</a></li>
+							<li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQs</a></li>
+							<li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
+						</ul>
+					</nav>
+
+					<div class="footer__menu-center">
+						<a class="logo logo__footer" href="#">
+							<img class="logo__link-footer" src="images/logo-white.svg" alt="">
+						</a>
+
+						<ul class="footer__social-link">
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="">
+									<img class="footer__social-img" src="" alt="">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="">
+									<img class="footer__social-img" src="" alt="">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="">
+									<img class="footer__social-img" src="" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<nav class="footer__menu-right">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item">
+								<h4 class="footer__menu-title">Contact</h4>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Whatsapp:<p class="footer__menu-text">+7 953 471-46-60</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Telegram: <p class="footer__menu-text">NgtBoost</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Discord: <p class="footer__menu-text">NgtBst#6206</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Mail: <p class="footer__menu-text">info@boost-master.com</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Workhours: <p class="footer__menu-text">24/7</p></a>
+							</li>
+						</ul>
+					</nav>
+
+
+				</div>
+				<div class="footer__copy">Copyright © 2023| WOT SERVICES| Design by| All rights reserved.</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<!-- підключення анімації -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- slider -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- end slider -->
+
+	<!-- <script src="js/main.js"></script>
+	<script src="js/account.js"></script> -->
+	<script src="js/addtocart.js"></script>
+	<script src="js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Yozhyk WoT Boost</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+		rel="stylesheet">
+	<!-- підключення анімації -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+
+					<a href="index.html" class="logo">
+						<img class="logo__link" src="images/logo.svg" alt="">
+					</a>
+
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html" class="menu__list-link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__list-link">DISCOUNTS</a>
+							</li>
+							<li class="menu__item">
+								<a href="faq.html" class="menu__list-link">FAQ</a>
+							</li>
+							<li class="menu__item">
+								<a href="contact.html" class="menu__list-link">CONTACT</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- --------- shopping cart ----- -->
+					<div class="shopping">
+						<img src="images/cart.svg" alt="">
+						<span class="shopping-quantity">0</span>
+					</div>
+					<!-- --------- end shopping cart ----- -->
+
+				</div>
+
+				<!------------- новий варіант -------------->
+				<div class="card">
+					<h1>Card</h1>
+					<ul class="listCard"></ul>
+					<div class="total" id="totalCost">0</div>
+					<div class="checkOut">
+						<div class="orderNow">Order now</div>
+						<div class="closeShopping">Close</div>
+					</div>
+				</div>
+				<!------------- новий варіант -------------->
+			</div>
+
+			<!-- <div class="header__content">
+				<p class="header__content-text">
+					Get exclusive services completed by professional World of Tanks players with years of experience. Unlock any
+					tier tank you want, get Global map progress, farm Silver and various types of EXP and get many more other
+					WoT services with a quick and effective completion.
+				</p>
+			</div> -->
+
+		</header>
+
+		<main class="main">
+
+			<section class="content">
+				<div class="container">
+
+					<div class="content__box">
+						<div class="content__box-left">
+							<img src="images/block/box-img-4.png" alt="" class="content__box-img">
+							<div class="box__inner">
+								<p class="box__left-text">1 000 000 credit cost - 3$</p>
+							</div>
+							<div class="box__counter">
+								<p class="box__counter-title">CHOOSE PACKAGE</p>
+
+								<!-- <div class="list"></div> -->
+
+								<!-- --------- Counter on Button Click in JavaScript ---------------  -->
+								<div class="quantity switch">
+									<button class="btn minus-btn min-btn disabled" type="button">-</button>
+									<input type="text" id="switch" value="1">
+									<button class="btn plus-btn pl-btn" type="button">+</button>
+								</div>
+								<!-- -------------------- -->
+							</div>
+							<h4 class="box__left-title">Total cost:</h4>
+							<p class="total-price">
+								<span id="price">3</span>
+								<span>$</span>
+							</p>
+							<!-- <div class="list"></div> -->
+							<button class="content__box-btn order-button">Order now</button>
+						</div>
+
+						<div class="content__box-right">
+							<h3 class="box__right-title">CREDITS</h3>
+							<p class="box__right-text">Buy World of Tanks Credits Farming and get a desired number of millions of
+								Silver obtained by professional players.</p> <br>
+							<p class="box__right-text">Buy World of Tanks Credits Farming and get a desired number of millions of
+								Silver obtained by professional players.
+								Silver in World of Tanks is a main form of payment for almost every in-game purchase you can make. You
+								need it for tanks, modules, ammo, consumables, equipment and many other items.
+								Without silver, you will not be able to continue your Tier progress or to be effective in Ranked and
+								Global Map battles.
+							</p> <br>
+							<p class="box__right-text">The process of farm itself is long, monotonous and frustrating, as the amount
+								of silver you get depends directly on your skill and luck. This is where Overgear comes to the scene,
+								offering you effective World of Tanks Credit farming service.</p>
+
+							<div class="block__item block__item-right">
+								<button class="block__title box__right-btn">REQUIREMENTS</button>
+								<div class="block__text box__right-text">At least one Tier 10 tank of each type;
+									Tanks of various nations required. You need to have tanks of Union, Block, Alliance and Coalition
+									nations.
+									You need to have previous tanks in your hangar if Chimera or Object 279(e) are ordered.
+								</div>
+							</div>
+							<div class="block__item block__item-right">
+								<button class="block__title box__right-btn">HOW IT WORKS</button>
+								<div class="block__text box__right-text">At least one Tier 10 tank of each type;
+									Tanks of various nations required. You need to have tanks of Union, Block, Alliance and Coalition
+									nations.
+									You need to have previous tanks in your hangar if Chimera or Object 279(e) are ordered.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials">
+				<div class="container">
+					<h2 class="section-title--white">Trusted by Thousands of <br> Happy Customer</h2>
+
+					<!-- Slider main container -->
+					<div class="swiper SwiperTestimonials">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="testimonials__container swiper-slide">
+								<p class="testimonials-text">“Wow... I am very happy to use this VPN, it turned out to be more than my
+									expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+								<p class="testimonials-author"> - Viezh Robert</p>
+							</div>
+							<div class="testimonials__container swiper-slide">
+								<p class="testimonials-text">“Wow... I am very happy to use this VPN, it turned out to be more than my
+									expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+								<p class="testimonials-author"> - Viezh Robert</p>
+							</div>
+							<div class="testimonials__container swiper-slide">
+								<p class="testimonials-text">“Wow... I am very happy to use this VPN, it turned out to be more than my
+									expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+								<p class="testimonials-author"> - Viezh Robert</p>
+							</div>
+							<div class="testimonials__container swiper-slide">
+								<p class="testimonials-text">“Wow... I am very happy to use this VPN, it turned out to be more than my
+									expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+								<p class="testimonials-author"> - Viezh Robert</p>
+							</div>
+							<div class="testimonials__container swiper-slide">
+								<p class="testimonials-text">“Wow... I am very happy to use this VPN, it turned out to be more than my
+									expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+								<p class="testimonials-author"> - Viezh Robert</p>
+							</div>
+						</div>
+						<!-- pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+
+
+					<a class="btn-testimonials" href="">View all reviews</a>
+				</div>
+			</section>
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__img">
+				<img src="images/footer-img-2.png" alt="">
+			</div>
+			<div class="container">
+
+				<div class="footer__content">
+
+					<nav class="footer__menu-left">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item">
+								<h4 class="footer__menu-title">QUICK LINKS</h4>
+							</li>
+							<li class="footer__menu-item"><a href="#" class="footer__menu-link">HOME</a></li>
+							<li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQs</a></li>
+							<li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
+						</ul>
+					</nav>
+
+					<div class="footer__menu-center">
+						<a class="logo logo__footer" href="#">
+							<img class="logo__link-footer" src="images/logo-white.svg" alt="">
+						</a>
+
+						<ul class="footer__social-link">
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="">
+									<img class="footer__social-img" src="" alt="">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="">
+									<img class="footer__social-img" src="" alt="">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a class="footer__social-link" href="">
+									<img class="footer__social-img" src="" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<nav class="footer__menu-right">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item">
+								<h4 class="footer__menu-title">Contact</h4>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Whatsapp:<p class="footer__menu-text">+7 953 471-46-60</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Telegram: <p class="footer__menu-text">NgtBoost</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Discord: <p class="footer__menu-text">NgtBst#6206</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Mail: <p class="footer__menu-text">info@boost-master.com</p></a>
+							</li>
+							<li class="footer__menu-item">
+								<a class="footer__menu-link" href="">Workhours: <p class="footer__menu-text">24/7</p></a>
+							</li>
+						</ul>
+					</nav>
+
+
+				</div>
+				<div class="footer__copy">Copyright © 2023| WOT SERVICES| Design by| All rights reserved.</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<!-- підключення анімації -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/main-cr.js"></script>
+	<script src="js/addtocart.js"></script>
+	<script src="js/order.js"></script>
+</body>
+
+</html>
